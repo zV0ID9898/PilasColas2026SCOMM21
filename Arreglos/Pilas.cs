@@ -22,5 +22,19 @@
             _arreglo[_tope] = elemento;
             _tope++;
         }
+
+
+        public void Eliminar()
+        {
+            if (_tope == 0)
+            {
+                throw new Exception("Pila vacia");
+            }
+
+            _tope--;
+            _arreglo[_tope] = null;
+
+        }
+
     }
 }
